@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Electricistas Caseros - Pago</title>
+	<link rel="icon" href ="C:\Users\Sistemas\Downloads\WEB\images/ele.ico" type="image / x-icon">	
+	<link rel="stylesheet" href="./naren1.css">
+</head>
+<body>
+	<div class="contenedor">
+		<h1>¡Recuerda!</h1>
+		<h2>Que con tu aporte nos estas ayudando para mejorar nuestros servicios y nuestros equipos de esta manera juntos lograremos ser los mejores.</h2><br><br>
+		<section class="tarjeta" id="tarjeta">
+			<div class="delantera">
+				<img src="./images/chip-tarjeta.png" class="chip" alt="">
+				<div class="datos">
+					<div class="grupo" id="numero">
+						<p class="label">Número Tarjeta</p>
+						<p class="numero">#### #### #### ####</p>
+					</div>
+					<div class="flexbox">
+						<div class="grupo" id="nombre">
+							<p class="label">Nombre Tarjeta</p>
+							<p class="nombre">CAMILO AVILA</p>
+						</div>
+						<div class="grupo" id="expiracion">
+							<p class="label">Fecha de Vencimineto</p>
+							<p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="trasera">
+				<div class="barra-magnetica"></div>
+				<div class="datos">
+					<div class="grupo" id="firma">
+						<p class="label">Firma</p>
+						<div class="firma"><p><i>Camilo Avila</i></p></div>
+					</div>
+					<div class="grupo" id="ccv">
+						<p class="label">CCV</p>
+						<p class="ccv"></p>
+					</div>
+				</div>
+				<p class="leyenda">Recuerda que de esta manera nos estas ayudando para mejorar nuestros servicios y nuestros equipos.</p>
+				<a href="#" class="link-banco">Gracias</a>
+			</div>
+		</section>
+		<div class="contenedor-btn">
+			<button class="btn-abrir-formulario" id="btn-abrir-formulario">
+				<i class="fas fa-plus"></i>
+			</button>
+		</div>
+		<form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+			<div class="grupo">
+				<label for="inputNumero">Número Tarjeta</label>
+				<input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+			</div>
+			<div class="grupo">
+				<label for="inputNombre">Nombres y Apellidos</label>
+				<input type="text" id="inputNombre" maxlength="19" autocomplete="off">
+			</div>
+			<div class="flexbox">
+				<div class="grupo expira">
+					<label for="selectMes">Fecha de Vencimineto</label>
+					<div class="flexbox">
+						<div class="grupo-select">
+							<select name="mes" id="selectMes">
+								<option disabled selected>Mes</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+						<div class="grupo-select">
+							<select name="year" id="selectYear">
+								<option disabled selected>Año</option>
+							</select>
+							<i class="fas fa-angle-down"></i>
+						</div>
+					</div>
+				</div>
+				<div class="grupo ccv">
+					<label for="inputCCV">CVV</label>
+					<input type="text" id="inputCCV" maxlength="3">
+				</div>
+			</div>
+			<input a href="./iniciar sesión cliente.html" id="button1" class="btn btn-default btn-lg" 
+                value='Enviar' onclick='alert("Hemos recibido tu aporte y también hemos recibido tu informacion. Envíamos una respuesta a tu correo debes verificarlo.")'></input>
+		</form>
+		<input id="button1" value ='Volver al Inicio' onclick="window.open('./index.html','_self')"/>  
+	</div>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./assets/js/main1.js"></script>
+</body>
+</html>
